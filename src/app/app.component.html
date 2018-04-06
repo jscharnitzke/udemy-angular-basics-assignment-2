@@ -6,7 +6,8 @@
         [(ngModel)]="username">
       <p>{{ username }}</p>
       <button class="btn btn-primary"
-        (click)="onUsernameReset()">Reset Username</button>
+        (click)="onUsernameReset()"
+        [disabled]="username === ''">Reset Username</button>
     </div>
   </div>
 </div>
